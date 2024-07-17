@@ -1,11 +1,11 @@
 # DSAlbums
 An implementation of the Java client for the Data API, using a dataset of music albums. This is a companion repository for the "[Using the Data API on HCD](https://www.youtube.com/watch?v=LbcsVfm4A-k)" video on the [DataStax Developers](https://www.youtube.com/@DataStaxDevs) YouTube channel.
-<img src="dsalbums.png" width="200" align=right />
 
 ## Known issues
  - Menu resizes horizontally based on the contents.
 
 ## Requirements
+<img src="dsalbums.png" width="300" align=right />
 
  - Java 21 (JRE)
  - Environment variables
