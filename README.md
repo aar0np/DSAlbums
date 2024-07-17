@@ -23,7 +23,6 @@ DSAlbums expects a collection named "albums" to exist in the "default_keyspace" 
  - `band`: The musical group who composed the album.
  - `year`: The year that the album was released.
 
-
 ## To build:
 
 ### Build Requirements
