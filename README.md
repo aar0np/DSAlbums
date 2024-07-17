@@ -12,9 +12,9 @@ An implementation of the Java client for the Data API, using a dataset of music 
      - `DB_API_ENDPOINT`
      - `DB_APPLICATION_TOKEN`
  - A database which supports the DataStax Data API:
-    -Astra DB
-    -DSE 6.9
-    -HCD 1.0
+    - Astra DB
+    - DSE 6.9
+    - HCD 1.0
 
 ## Database Schema
 DSAlbums expects a collection named "albums" to exist in the "default_keyspace" namespace. The `albums` collection is expected to contain four properties:
