@@ -42,12 +42,13 @@ public class DSAlbumsMainView extends VerticalLayout {
 		
 		controller = new DSAlbumsController();
 
-		add(new H1("Welcome to DSAlbums!"));
+		add(new H1("AaronsAlbums"));
 		
 		albums = new HashMap<String,String>();
 		
 		loadAlbums();
 		
+		albumIndex.setHeight("500px");
 		albumIndex.getStyle().set("font", "10px");
 		albumIndex.getStyle().set("border", "2px solid Black");
 		albumIndex.addValueChangeListener(click -> {
@@ -101,8 +102,13 @@ public class DSAlbumsMainView extends VerticalLayout {
 			
 			// album images will be defined as the lowercase title with all spaces removed
 			String filename = strTitle.toLowerCase().replace(" ","") + ".jpeg";
-			albumImage.setSrc(new StreamResource(strTitle, () -> getClass()
-					.getResourceAsStream("/images/" + filename)));
+			try {
+				albumImage.setSrc(new StreamResource(strTitle, () -> getClass()
+						.getResourceAsStream("/images/" + filename)));
+			} catch (Exception ex) {
+				albumImage.setSrc(new StreamResource(strTitle, () -> getClass()
+						.getResourceAsStream("/images/noImage.png")));
+			}
 		}
 	}
 	
